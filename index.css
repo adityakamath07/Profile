@@ -1,4 +1,70 @@
+html{
+    scroll-behavior:smooth;
+}
+
+.FlexHead{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:10px 5%;
+    border-bottom: 1px solid #ccc;
+}
+
+.OtherHead{
+    display:flex;
+    align-items:center;
+    gap:25px;
+}
+/*Vibe coded*/
+
+.OtherHead a:not(:last-child)::after {
+    content: "|";
+    margin-left: 25px;
+}
+
+@media (max-width: 700px) {
+    .Profile {
+        flex-direction: column;
+        gap: 30px;
+        padding: 30px 20px;
+    }
+}
+
+/*Will figure it out later*/
+.Para {
+  position:relative; /* The text is kind of down*/
+  top:-2px;
+  color: inherit;
+  text-decoration:none;
+   /*Well the below is the text config which I inspected from my friends website ;-;.*/
+  font-family:JetBrains Mono;
+  font-weight:100 800;           /* font-bold */
+  font-display:swap; /*I wonder what does it do ;-; (JK it displays its usual font until it loads the JetBrains mono)*/
+  letter-spacing: 0.18em;    /* tracking-[0.18em](Sorry my good friend) */
+  transition: opacity 200ms;
+}
+
+.Para:hover {
+  opacity: 0.7;
+}
+
+.Profile{
+    display:flex;
+    gap:100px;
+    align-items:center;
+    justify-content:center;
+    padding:50px;
+}
+
+.PFP{
+    width:275px;
+    max-width:100%;
+    border:3px solid #2563EB;
+    border-radius:50%;
+}
 .connect{
     margin:50px;
     padding:50px;
 }
+
+
