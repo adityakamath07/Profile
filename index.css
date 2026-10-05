@@ -2,11 +2,18 @@ html{
     scroll-behavior:smooth;
 }
 
+.Header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    backdrop-filter: blur(10px);
+}
+
 .FlexHead{
     display:flex;
     align-items:center;
     justify-content:space-between;
-    padding:10px 5%;
+    padding:8px 5%;
     border-bottom: 1px solid #ccc;
 }
 
@@ -50,7 +57,7 @@ html{
 
 .Profile{
     display:flex;
-    gap:100px;
+    gap:75px;
     align-items:center;
     justify-content:center;
     padding:40px;
@@ -65,11 +72,11 @@ html{
 
 .cursor {
     display: inline-block;
-    width: 3px;
-    height: 1em;
-    background: #2563EB;
+    width: 15px;
+    height: 3px;
+    background: #000000;
     animation: blink 0.8s infinite;
-    vertical-align:middle;
+    vertical-align:bottom;
 }
 
 @keyframes blink {
@@ -79,12 +86,14 @@ html{
 }
 
 .Box{
-    width:400px;
-    padding:20px;
+    width:525px;
+    max-width:90%;
+    padding:10px 20px;
     border:5px solid black;
 }
 
 .meh{
+    min-height:600px;
     display:flex;
     align-items:center;
     gap:10px;
