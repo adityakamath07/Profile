@@ -1,5 +1,5 @@
 As you guessed the entire README.md file is vibe texted. In short I want to learn full-stack by experimenting and breaking things. I'm learning things by watching Youtube
-videos and inspecting pages(Mostly my friend's vibe-coded portfolio 🥲).
+videos and inspecting pages(Mostly my friend's vibe-coded portfolio 🥲). Vibe coded the java script for now and am gonna change it after i learn js.
 
 # Personal Portfolio
 
