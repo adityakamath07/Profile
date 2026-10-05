@@ -37,7 +37,7 @@ html{
   color: inherit;
   text-decoration:none;
    /*Well the below is the text config which I inspected from my friends website ;-;.*/
-  font-family:JetBrains Mono;
+  font-family:"JetBrains Mono";
   font-weight:100 800;           /* font-bold */
   font-display:swap; /*I wonder what does it do ;-; (JK it displays its usual font until it loads the JetBrains mono)*/
   letter-spacing: 0.18em;    /* tracking-[0.18em](Sorry my good friend) */
@@ -53,15 +53,43 @@ html{
     gap:100px;
     align-items:center;
     justify-content:center;
-    padding:50px;
+    padding:40px;
 }
 
 .PFP{
     width:275px;
     max-width:100%;
-    border:3px solid #2563EB;
+    border:5px solid #2563EB;
     border-radius:50%;
 }
+
+.cursor {
+    display: inline-block;
+    width: 3px;
+    height: 1em;
+    background: #2563EB;
+    animation: blink 0.8s infinite;
+    vertical-align:middle;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.Box{
+    width:400px;
+    padding:20px;
+    border:5px solid black;
+}
+
+.meh{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
 .connect{
     margin:50px;
     padding:50px;
