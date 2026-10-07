@@ -39,3 +39,13 @@ function typeEffect() {
 }
 
 typeEffect();
+
+function popup() {
+    const Popup = document.getElementById("Popup");
+
+    Popup.style.display = "block";
+
+    setTimeout(() => {
+        Popup.style.display = "none";
+    }, 3000);
+}

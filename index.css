@@ -6,6 +6,7 @@ html{
     position:sticky;
     top:0;
     z-index:1000;
+    opacity:0.7;
     backdrop-filter: blur(10px);
 }
 
@@ -56,12 +57,38 @@ html{
 }
 
 .Profile{
+    position:relative;
     display:flex;
     gap:75px;
     align-items:center;
     justify-content:center;
     padding:40px;
+    overflow:hidden;
 }
+
+/*Vibe coded since idk the colors.*/
+.Profile::before {
+    content: "";
+    position: absolute;
+
+    width: 550px;
+    height: 550px;
+
+    background: radial-gradient(
+        circle,
+        rgba(255, 220, 0, 0.65) 0%,
+        rgba(255, 235, 80, 0.35) 30%,
+        rgba(255, 245, 150, 0.12) 55%,
+        transparent 75%
+    );
+
+    left: calc(50% - 310px);
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    z-index: -1;
+}
+/*Sorry for vibecoding a lot*/
 
 .PFP{
     width:275px;
@@ -93,15 +120,38 @@ html{
 }
 
 .meh{
-    min-height:600px;
+    margin-top:400px;
     display:flex;
     align-items:center;
     gap:10px;
+}
+
+.Pics{
+    display:flex;
+    margin-top:10px;
+    margin-left:10px;
+    gap:10px;
+    width:490px;
+    border-radius:10px;
+}
+
+.Pics img:hover {
+    filter: brightness(80%);
+}
+
+#Popup {
+    display: none;
+    position: fixed;
+    top: 80px;
+    right: 30px;
+    background: #0A0A0A;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 8px;
+    z-index: 9999;
 }
 
 .connect{
     margin:50px;
     padding:50px;
 }
-
-
