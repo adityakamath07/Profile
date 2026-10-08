@@ -25,8 +25,8 @@ The goal isn't just to make a portfolio that looks good, but to understand how e
 * [x] Personal introduction
 * [x] Profile section
 * [x] Initial styling and layout
-* [ ] Responsive design improvements
-* [ ] Projects section
+* [x] Responsive design improvements
+* [x] Projects section
 * [ ] Skills section
 * [ ] Contact section
 * [ ] Interactive JavaScript features
